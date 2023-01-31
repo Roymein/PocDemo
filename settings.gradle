@@ -1,5 +1,6 @@
 rootProject.name = 'PocDemo'
 include ':Interview:DataStructure'
+include ':Interview:AlgorithmExercise'
 include ':LibCore:Reflect'
 include ':Poc:KotlinPoc'
 
