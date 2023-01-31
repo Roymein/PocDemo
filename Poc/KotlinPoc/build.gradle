@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.0'
+}
+
+archivesBaseName = "Kotlin"
+version '1.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+//    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    //target:xml
+    implementation group: 'org.dom4j', name: 'dom4j', version: '2.1.1'
+    //target:excel
+    implementation "org.apache.poi:poi-excelant:4.1.0"
+    //target:html
+    implementation 'org.jsoup:jsoup:1.11.3'
+
+//    implementation "org.apache.poi:poi:4.1.2"
+}
+
+test {
+    useJUnitPlatform()
+}
